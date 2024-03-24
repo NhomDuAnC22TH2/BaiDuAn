@@ -79,6 +79,7 @@
     <Content Include="DangNhap.aspx" />
     <Content Include="DichVu.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="LienHe.aspx" />
     <Content Include="PhuKien.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -216,6 +217,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LienHe.aspx.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LienHe.aspx.designer.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
     </Compile>
     <Compile Include="PhuKien.aspx.cs">
       <DependentUpon>PhuKien.aspx</DependentUpon>

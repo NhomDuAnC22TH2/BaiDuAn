@@ -22,9 +22,13 @@
       <li class="nav-item col-sm-3">
         <a class="nav-link active" href="#">Trang Chủ</a>
       </li>   
-      <li class="nav-item col-sm-2">
-        <a class="nav-link" href="ThuCung.aspx">Thú cưng</a>
-      </li>
+     <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" href="ThuCung.aspx" data-toggle="dropdown">Thú Cưng</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="">Chó</a>
+                <a class="dropdown-item" href="">Mèo</a>
+            </div>
+        </li>
       <li class="nav-item col-sm-2">
         <a class="nav-link" href="PhuKien.aspx">Phụ Kiện</a>
       </li>
@@ -34,10 +38,10 @@
         <li class="nav-item col-sm-3">
         <a class="nav-link" href="LienHe.aspx">Liên hệ</a>
       </li>   
-         <li class="nav-item col-sm-2">
+         <li class="nav-item col-sm-3">
         <a class="nav-link" href="DangNhap.aspx">Đăng Nhập</a>
       </li>   
-         <li class="nav-item col-sm-2">
+         <li class="nav-item col-sm-3">
         <a class="nav-link" href="DangKy.aspx">Đăng ký</a>
       </li>   
     </ul>
@@ -53,5 +57,7 @@
             C22TH2 _ Nguyễn Quốc Đạt _ Huỳnh Văn Trương _ Phạm Ngọc Dương
         </footer>
     </form>
+          <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>
