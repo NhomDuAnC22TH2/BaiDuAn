@@ -20,20 +20,17 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav" >
       <li class="nav-item col-sm-3">
-        <a class="nav-link active" href="#">Trang Chủ</a>
+        <a class="nav-link active" href="ThuCung.aspx">Trang Chủ</a>
       </li>   
-     <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" href="ThuCung.aspx" data-toggle="dropdown">Thú Cưng</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="">Chó</a>
-                <a class="dropdown-item" href="">Mèo</a>
-            </div>
-        </li>
       <li class="nav-item col-sm-2">
-        <a class="nav-link" href="PhuKien.aspx">Phụ Kiện</a>
+        <a class="nav-link" href="ThuCung.aspx">Thú cưng</a>
       </li>
+
       <li class="nav-item col-sm-2">
         <a class="nav-link" href="DichVu.aspx">Dịch vụ</a>
+      </li>
+        <li class="nav-item col-sm-2">
+        <a class="nav-link" href="GioHang.aspx">Giỏ hàng</a>
       </li>    
         <li class="nav-item col-sm-3">
         <a class="nav-link" href="LienHe.aspx">Liên hệ</a>
@@ -54,8 +51,31 @@
             </asp:ContentPlaceHolder>
         </div>
         <footer class="text-center" style="background-color:darkorange" >
-            C22TH2 _ Nguyễn Quốc Đạt _ Huỳnh Văn Trương _ Phạm Ngọc Dương
-        </footer>
+   
+        <div class="container t-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Useful Info</h1>
+                    <p>Upcoming Discounts</p>
+                    <p>Return Policy</p>
+                    <p><a href="javascript:priv()">Privacy Policy</a></p>
+                    <p>Terms of Use</p>
+                </div>
+                <div class="col-md-4">
+                    <h1>About Us</h1>
+                    <p>
+                        We are a small company that loves<br> to see animals happy and well-treated.<br> Our products are 100% original<br> and safe for your pet.<br><br> Thank you for selecting us!
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h1>Find Us on:</h1>
+                    <h5>https://github.com/NhomDuAnC22TH2/BaiDuAn.git</h5>
+                </div>
+            </div>
+            <hr>
+            <p>  C22TH2 _ Nguyễn Quốc Đạt _ Huỳnh Văn Trương _ Phạm Ngọc Dương</p>
+        </div>
+    </footer>
     </form>
           <script src="Scripts/jquery-3.0.0.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>

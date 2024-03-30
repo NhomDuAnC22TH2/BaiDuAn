@@ -78,9 +78,63 @@
     <Content Include="DangKy.aspx" />
     <Content Include="DangNhap.aspx" />
     <Content Include="DichVu.aspx" />
+    <Content Include="GioHang.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="hinh\300px-Pluto_as_Dumbo_..._%283341583025%29.jpg" />
+    <Content Include="hinh\55f85d6b-cho-nui-bern-1.jpg" />
+    <Content Include="hinh\7d4f1652-cho-nui-bern-3.jpg" />
+    <Content Include="hinh\7Irish-Terrier.jpg" />
+    <Content Include="hinh\800px-Beagle_harrier.jfif" />
+    <Content Include="hinh\A-bullmastiff-puppy.jpg" />
+    <Content Include="hinh\A-bullmastiff-puppy.png" />
+    <Content Include="hinh\A-bullmastiff-with-a-child.jpg" />
+    <Content Include="hinh\a0c39703-cho-nui-bern-2.jpg" />
+    <Content Include="hinh\Alaska Malamute.jpg" />
+    <Content Include="hinh\Alaska Malamute2.jpg" />
+    <Content Include="hinh\Alaska Malamute3.jpg" />
+    <Content Include="hinh\Alaska Malamute4.jfif" />
+    <Content Include="hinh\Basset-Hound-1.jpg" />
+    <Content Include="hinh\Beauceron-sitting-fence-573817693-2000-a99e22919fc042d88b96e991dd3c4e7b.jpg" />
+    <Content Include="hinh\blog-breed-beagle_1_1.max-500x500.format-jpeg.jpg" />
+    <Content Include="hinh\Bullmastiff-1-1024x576.png" />
+    <Content Include="hinh\cach-nuoi-cho-mat-xe-pug-hieu-qua-danh-cho-nguoi-chua-co-kinh-nghiem-202104210039482626.jpg" />
+    <Content Include="hinh\cam-nang-cho-chihuahua-nguon-goc-dac-diem-cach-nuoi-gia-ban-202203301052294598.jpg" />
+    <Content Include="hinh\CH30567-chihuahua-mini-mau-trang.jpg" />
+    <Content Include="hinh\cho-poodle-toy-mau-nau-30-1-4422.jfif" />
+    <Content Include="hinh\cho-poodle.htm" />
+    <Content Include="hinh\cho-pug-mini.jpg" />
+    <Content Include="hinh\chó-săn-sói-3png.png" />
+    <Content Include="hinh\Degaen.jpg" />
+    <Content Include="hinh\Dog-Briard-An_adult_Briard_running_at_full_pace.jpg" />
+    <Content Include="hinh\download %281%29.jfif" />
+    <Content Include="hinh\download %282%29.jfif" />
+    <Content Include="hinh\download.jfif" />
+    <Content Include="hinh\English-Mastiff-nho-con-2-thang-tuoi.jpeg" />
+    <Content Include="hinh\English-Mastiff-puppy.jpg" />
+    <Content Include="hinh\Huan-luyen-cho-Basset-Hound.jpg" />
+    <Content Include="hinh\images %281%29.jfif" />
+    <Content Include="hinh\images.jfif" />
+    <Content Include="hinh\irlandskij-terer-raznovidnosti-pravila-uhoda-i-kormleniya-1-1024x683.jpg" />
+    <Content Include="hinh\istockphoto-1355035543-612x612.jpg" />
+    <Content Include="hinh\istockphoto-152940378-612x612.jpg" />
+    <Content Include="hinh\Khuon-mat-English_Mastiff.jpg" />
+    <Content Include="hinh\meo-cham-soc-cho-chihuahua-tu-chuyen-gia.png" />
+    <Content Include="hinh\Ngao-anh-mau-bo.jpg" />
+    <Content Include="hinh\Pembroke_Welsh_Corgi_600.jpg" />
+    <Content Include="hinh\pet-1618367594.jpg" />
+    <Content Include="hinh\phan-biet-chihuahua-va-phoc.jpg" />
+    <Content Include="hinh\pitzanian1.jpg" />
+    <Content Include="hinh\pitzanian2.jpg" />
+    <Content Include="hinh\pngtree-briard-dog-long-beautiful-sable-photo-picture-image_6744690.jpg" />
+    <Content Include="hinh\pngtree-gray-dog-laying-down-in-the-grass-image_2894509.jpg" />
+    <Content Include="hinh\pug11_0.jpg" />
+    <Content Include="hinh\shiba.jpg" />
+    <Content Include="hinh\shiba3.jpg" />
+    <Content Include="hinh\shiba4.jfif" />
+    <Content Include="hinh\tong-hop-6-cach-huan-luyen-cho-poodle-day-du-nhat-202206021518371142.jpg" />
+    <Content Include="hinh\unnamed.jpg" />
+    <Content Include="hinh\Welchcorgipembroke.JPG" />
     <Content Include="LienHe.aspx" />
-    <Content Include="PhuKien.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -105,6 +159,18 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="ThuCung.aspx" />
+    <Content Include="hinh\Beagles-pets.webp" />
+    <Content Include="hinh\Beagles-standing-in-a-frosty-field-on-a-cold-morning.webp" />
+    <Content Include="hinh\beauceron-dog-puppy-647306.jpg.webp" />
+    <Content Include="hinh\Beauceron-puppies.webp" />
+    <Content Include="hinh\Bullmastiff-puppy-standing.webp" />
+    <Content Include="hinh\C63b973ad4f8f0013438db172813a4a5.webp" />
+    <Content Include="hinh\cho-pug-1256x800.webp" />
+    <Content Include="hinh\crvg7yroprzmj5p2z2yn_b4a9ebbf9f80494ea241999c2ce2c5dd_grande.webp" />
+    <Content Include="hinh\IMG_20210826_094559_563-0001.webp" />
+    <Content Include="hinh\Pembroke-Welsh-Corgi-standing-outdoors-in-the-fall.webp" />
+    <Content Include="hinh\public.avif" />
+    <Content Include="hinh\shiba2.webp" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -215,6 +281,13 @@
     <Compile Include="DichVu.aspx.designer.cs">
       <DependentUpon>DichVu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -225,13 +298,8 @@
     <Compile Include="LienHe.aspx.designer.cs">
       <DependentUpon>LienHe.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PhuKien.aspx.cs">
-      <DependentUpon>PhuKien.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PhuKien.aspx.designer.cs">
-      <DependentUpon>PhuKien.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SiteLayout.Master.cs">
       <DependentUpon>SiteLayout.Master</DependentUpon>
@@ -262,7 +330,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
