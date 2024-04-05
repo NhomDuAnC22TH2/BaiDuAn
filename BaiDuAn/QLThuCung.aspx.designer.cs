@@ -11,25 +11,25 @@ namespace BaiDuAn
 {
 
 
-    public partial class DichVu
+    public partial class QLThuCung
     {
 
         /// <summary>
-        /// rqtDV control.
+        /// DSSP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rqtDV;
+        protected global::System.Web.UI.WebControls.SqlDataSource DSSP;
 
         /// <summary>
-        /// DSDV control.
+        /// dvSP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DSDV;
+        protected global::System.Web.UI.WebControls.GridView dvSP;
     }
 }

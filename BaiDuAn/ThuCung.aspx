@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2 class="text-center">Danh sách Sản phẩmm</h2>
+    <h2 class="text-center">Danh sách Bé Yêu</h2>
      <div class="form-inline">
         chọn danh mục:<asp:DropDownList ID="ddlquocgiatc" runat="server" DataSourceID="DSQG" DataTextField="QUOCGIA" DataValueField="MAQG" AutoPostBack="True"></asp:DropDownList>
     </div>

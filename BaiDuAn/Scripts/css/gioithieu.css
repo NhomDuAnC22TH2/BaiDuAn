@@ -1,0 +1,207 @@
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  .header h1 {
+    top: 18px;
+    left: 10px;
+  }
+  
+  /* div.header{
+    background-image: : url("./img/logo.jpg");
+  
+  } */
+  
+  #header{
+    background-image: url(img/nen_01.png);
+    background-repeat:  no-repeat;
+    background-size: cover;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #e9d8f4;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 10px;
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 20px;
+    background: white;
+    color: #58257b;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #58257b;
+    padding: 0px 15px;
+    border-radius: 5px;
+  }
+  
+  /* Định dạng link điều hướng */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  
+  }
+  
+  /* Thay đổi màu liên kết khi di chuột qua */
+  .topnav a:hover {
+    background-color: #db7093;
+    color: white;
+  }
+  
+  /* Tạo hai cột không bằng nhau, float cạnh nhau */
+  /* Cột trái */
+  .leftcolumn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Cột phải */
+  .rightcolumn {
+    float: left;
+    width: 50%;
+    background-color: #e9d8f4;
+    padding-left: 20px;
+  }
+  
+  /* Hình ảnh tượng trưng */
+  .fakeimg {
+    background-color: #baa1cc;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .fakeimg1 {
+    background-color: #FFCC9930;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .fakeimg img{
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+  }
+  /* Thêm định dạng thẻ cho bài viết */
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px; /* cách lề dưới*/
+  }
+  .card a {
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+  }
+  .card a:hover  {
+      background-color: #db7093;
+      color: white;
+  }
+  .card h2{
+    margin-top: 0;
+  }
+  
+  .top {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear float khác sau các cột */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  
+  .footer{
+  
+      display: flex;
+  
+      background-color: rgb(94, 92, 92);
+  
+      color: white;
+  
+      font-size: 110%;
+  
+      text-align: center;
+  
+  }
+  
+  .item-footer{
+  
+      flex: 1;
+  
+      margin: 10px 20px;
+  
+  }
+  
+  .item-footer h4{
+  
+      font-size: 140%;
+  
+      margin: 10px 0;
+  
+  }
+  
+  .ul-footer a{
+  
+      text-decoration: none;
+  
+      color: white;
+  
+  }
+  
+  .ul-footer li{
+  
+      list-style: none;
+  
+  }
+  
+  .ul-footer{
+  
+      padding: 0;
+  
+  }
+  
+  /* Bố cục linh hoạt: các cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình
+  có chiều rộng dưới 700px */
+  @media screen and (max-width: 700px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Bố cục linh hoạt: Thanh menu điều hướng xếp chồng lên nhau thay vì cạnh nhau
+  khi màn hình có chiều rộng dưới 300px  */
+  @media screen and (max-width: 300px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }

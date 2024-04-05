@@ -49,12 +49,37 @@ namespace BaiDuAn.Models
         //Phương thức cập nhật số lượng,
         public void Update(int masp, int soluong)
         {
-            //tự code
+            int index = findID(masp);
+            if (index != -1)
+            {
+               if(soluong > 0)
+                {
+                    _items[index].SoLuong = soluong;
+                }
+                else
+                {
+                    _items.RemoveAt(index);
+                }
+            }
         }
         //phương thức xoá sản phẩm khỏi giỏ,
         public void Delete(int masp)
         {
-            //tự code
+            int index = findID(masp);
+            if(index != -1 ){
+                _items.RemoveAt(index);
+            }
+        }
+        private int findID (int masp)
+        {
+            for(int i=0; i<_items.Count; i++)
+            {
+                if(_items[i].MaSP == masp)
+                {
+                    return i;
+                }
+            }
+            return -1;
         }
         //tính tổng thành tiền
         public int Total
