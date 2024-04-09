@@ -15,7 +15,7 @@
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="name">Name</label>
-									<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+									<asp:TextBox id="HOTEN" type="text" class="form-control" name="name" value="" required autofocus runat="server" />
 									<div class="invalid-feedback">
 										Name is required	
 									</div>
@@ -23,7 +23,7 @@
 
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="email">E-Mail Address</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required>
+									<asp:TextBox id="TENTK" type="email" class="form-control" name="email" value="" required runat="server" />
 									<div class="invalid-feedback">
 										Email is invalid
 									</div>
@@ -31,26 +31,32 @@
 
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="password">Password</label>
-									<input id="password" type="password" class="form-control" name="password" required>
+									<asp:TextBox id="MKHAU" type="password" class="form-control" name="password" required runat="server" />
 								    <div class="invalid-feedback">
 								    	Password is required
 							    	</div>
 								</div>
-
+								<div class="d-flex align-items-center">
+									<div class="form-check">
+										<input type="checkbox" name="admin" id="admin" class="form-check-input">
+										<label for="admin" class="form-check-label">Admin</label>
+									</div>
+								</div>
 								<p class="form-text text-muted mb-3">
 									By registering you agree with our terms and condition.
 								</p>
-
+							
 								<div class="align-items-center d-flex">
-									<button type="submit" class="btn btn-primary ms-auto">
-										Register	
-									</button>
+	<asp:button type="submit" id="submit" class="btn btn-primary ms-auto" onclick="btnDangKy_Click" runat="server" Text="Register">
+									
+									</asp:button>
 								</div>
+								
 							</form>
 						</div>
 						<div class="card-footer py-3 border-0">
 							<div class="text-center">
-								Already have an account? <a href="index.html" class="text-dark">Login</a>
+								Already have an account? <a href="DangNhap.aspx" class="text-dark">Login</a>
 							</div>
 						</div>
 					</div>

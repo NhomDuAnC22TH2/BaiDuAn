@@ -47,36 +47,33 @@
     <script src=".\assets\main.js"></script>
     <link rel="stylesheet" href="Scripts/css/main.css">
     <link rel="stylesheet" tye ="text/css" href="Scripts/css/gioithieu.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://use.fontawesome.com/7ece383595.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
-    <form id="form1" runat="server">
-        <div>
+<body>   
         <nav>
             <div class="img-nav">
                <a href="ThuCung.aspx"> <img src="hinh/logo_pet_yeu.png" alt="" height="50"/></a>
             </div>
             <div class="content-nav">
                 <ul>
-                    <li><a href="ThuCung.aspx">Trang Chủ</a></li>
-                    <li><a href="ThuCung.aspx">Thú Cưng</a></li>
-                    <li><a href="LienHe.aspx">Liên Hệ</a></li>
-                    <li><a href="DichVu.aspx">Dịch Vụ</a></li>
-                    <li><a href="GioiThieu.aspx">Giới Thiệu</a></li>
-                    <li><a href="QLThuCung.aspx">QL Thú cưng</a></li>
-                   
-                </ul>
-                <div>
+                    
+                    <%if (ktNhanVien == 0)
+                    {  %>
+                <li><a href="ThuCung.aspx">Trang chủ</a></li>
+                <li><a href="DichVu.aspx">Dịch Vụ</a></li>
+                <li><a href="LienHe.aspx">Liên hệ</a></li>
+                <li><a href="GioiThieu.aspx">Giới Thiệu</a></li>
+                            <div>
                     <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
                     <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </div>
-            </div>
-                    
-            <!-- The Modal -->
-            <button id="cart">
+                </div>          
+
+                    <button id="cart">
                 <a class="fa fa-shopping-basket" aria-hidden="true" href="GioHang.aspx">Giỏ Hàng</a>
             </button>
             <div id="myModal" class="modal">
@@ -93,13 +90,46 @@
                     </div>
                 </div>
             </div>
-                  <div class="login">
-                    <li><a href="DangNhap.aspx">Đăng Nhập</a></li>
-                    <li><a href="DangKy.aspx">Đăng Ký</a></li>
-                  </div>
+               
+                <% if (ktDangNhap == 0 || ktDangNhap2 == 0)
+                    {
+                %>
+                <li><a href="Dangnhap.aspx">Đăng nhập / Đăng ký</a></li>
+                <%}
+                    else if (ktDangNhap == 1)
+                    {  %>
+                <li><a href="ThuCung.aspx?x=0">Đăng xuất</a></li>
+                <li><a href="ThuCung.aspx"><%=name%></a></li>
+                <%}
+                    }
+                    else
+                    {%>
+                <li><a href="ThuCung.aspx">Trang chủ</a></li>
+                <li><a href="DichVu.aspx">Dich vụ</a></li>
+                <li><a href="GioHang.aspx">Giỏ hàng</a></li>
+                <li><a href="QLThuCung.aspx">Thú cưng</a></li>
+                
+                 <% if (ktDangNhap == 0 || ktDangNhap2 == 0)
+                     {
+                %>
+                <li><a href="Dangnhap.aspx">Đăng nhập / Đăng ký</a></li>
+                <%}
+                    else if (ktDangNhap == 1)
+                    {  %>
+                <li><a href="ThuCung.aspx?x=0">Đăng xuất</a></li>
+                <li><a href="ThuCung.aspx"><%=name%></a></li>
+                <%}
+                    }%>
+                </ul>
+
+               
+            </div>
+                    
+            <!-- The Modal -->
+       
         </nav>
             
-        </div>
+        <form id="form1" runat="server">
         <div>
              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
@@ -157,5 +187,6 @@
     </form>
      <script src="Scripts/jquery-3.0.0.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
+   
 </body>
 </html>

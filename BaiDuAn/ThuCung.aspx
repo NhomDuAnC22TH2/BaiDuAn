@@ -3,13 +3,24 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2 class="text-center">Danh sách Bé Yêu</h2>
-     <div class="form-inline">
-        chọn danh mục:<asp:DropDownList ID="ddlquocgiatc" runat="server" DataSourceID="DSQG" DataTextField="QUOCGIA" DataValueField="MAQG" AutoPostBack="True"></asp:DropDownList>
+    <div class="col-md-6">
+           
+            </div>
+    <div class="row">
+    <div class="col-md-3">
+        <ul class="list-group">
+            <a class="list-group-item active">Danh Mục</a>
+            <asp:Repeater ID="rptMAQG" runat="server" DataSourceID="DSQG" OnItemCommand="rqtMAQG_ItemCommand" >
+                <ItemTemplate>
+                    <a href="ThuCung.aspx?MAQG=<%#Eval("MAQG") %>" class="list-group-item list-group-item-action"><%#Eval("QUOCGIA") %></a>
+                </ItemTemplate>
+            </asp:Repeater>
+        </ul>
     </div>
-     <div class="row mt-2">
-        <asp:Repeater ID="rqtSP" runat="server" DataSourceID="DSSP" OnItemCommand="rqtSP_ItemCommand">
+     <div class="col-md-9 row" >
+        <asp:ListView ID="lvSP" runat="server" DataSourceID="DSSP" >
             <ItemTemplate>
-                <div class=" col-md-3 mt-2 text-center">
+                <div class="col-4">
                     <a href="#">
                         <img src="hinh/<%# Eval("Hinh") %>"style="width:200px;object-fit:cover"/>
                     </a>
@@ -21,17 +32,23 @@
                         OnClick="btAddToCart_Click" />
                 </div>
             </ItemTemplate>
-        </asp:Repeater>
+           <%-- <EmptyDataTemplate>
+                <div class="alert alert-info">
+                    Không có sách bạn tìm
+                </div>
+            </EmptyDataTemplate>--%>
+        </asp:ListView>
     </div>
-            
+    </div>       
     <asp:SqlDataSource ID="DSQG" runat="server"
         ConnectionString="<%$ ConnectionStrings:QLSHOPConnectionString %>" 
         SelectCommand="SELECT * FROM [MAQG]"></asp:SqlDataSource>
     <asp:SqlDataSource ID="DSSP" runat="server" 
         ConnectionString="<%$ ConnectionStrings:QLSHOPConnectionString %>" 
-        SelectCommand="SELECT * FROM [SANPHAM] WHERE ([MAQG] = @MAQG)">
+        SelectCommand="SELECT * FROM [SANPHAM] WHERE ([MAQG] = @MAQG) ">
         <SelectParameters>
-            <asp:ControlParameter ControlID="ddlquocgiatc" Name="MAQG" PropertyName="SelectedValue" Type="String" />
+         <asp:QueryStringParameter DefaultValue="5" Name="MAQG"  QueryStringField="MAQG" />
+         
         </SelectParameters>
     </asp:SqlDataSource>
     </asp:Content>

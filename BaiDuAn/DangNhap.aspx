@@ -16,7 +16,7 @@
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="email">E-Mail Address</label>
-									<asp:TextBox id="TENTK" type="email" class="form-control" name="email" value="" required autofocus></asp:TextBox>
+									<asp:TextBox id="TENTK" type="email" class="form-control" name="email" value="" required autofocus runat="server"></asp:TextBox>
 									<div class="invalid-feedback">
 										Email is invalid
 									</div>
@@ -29,21 +29,23 @@
 											Forgot Password?
 										</a>
 									</div>
-									<asp:TextBox id="MKHAU" type="password" class="form-control" name="password" required></asp:TextBox>
+									<asp:TextBox id="MKHAU" type="password" class="form-control" name="password" required runat="server"></asp:TextBox>
 								    <div class="invalid-feedback">
 								    	Password is required
 							    	</div>
 								</div>
 
+								
+
 								<div class="d-flex align-items-center">
 									<div class="form-check">
 										<input type="checkbox" name="remember" id="remember" class="form-check-input">
 										<label for="remember" class="form-check-label">Remember Me</label>
-									</div>
-									<button type="submit" id="submit" class="btn btn-primary ms-auto" onclick="btnDangNhap_Click">
-										Login
-									</button>
+									</div>	
 								</div>
+								<asp:button type="submit" id="submit" class="btn btn-primary ms-auto" onclick="btnDangNhap_Click" runat="server" Text="Login">
+									
+									</asp:button>
 							</form>
 						</div>
 						<div class="card-footer py-3 border-0">

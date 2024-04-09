@@ -15,9 +15,9 @@ namespace BaiDuAn
 
         }
 
-        protected void rqtSP_ItemCommand(object source, RepeaterCommandEventArgs e)
+        protected void rqtMAQG_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-
+            
         }
         protected void btAddToCart_Click(object sender, EventArgs e)
         {

@@ -15,22 +15,22 @@ namespace BaiDuAn
     {
 
         /// <summary>
-        /// ddlquocgiatc control.
+        /// rptMAQG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlquocgiatc;
+        protected global::System.Web.UI.WebControls.Repeater rptMAQG;
 
         /// <summary>
-        /// rqtSP control.
+        /// lvSP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rqtSP;
+        protected global::System.Web.UI.WebControls.ListView lvSP;
 
         /// <summary>
         /// DSQG control.

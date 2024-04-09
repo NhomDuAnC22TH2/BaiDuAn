@@ -160,6 +160,12 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.1.js" />
+    <Content Include="Scripts\jquery-3.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
+    <Content Include="ThemSP.aspx" />
     <Content Include="ThuCung.aspx" />
     <Content Include="hinh\Beagles-pets.webp" />
     <Content Include="hinh\Beagles-standing-in-a-frosty-field-on-a-cold-morning.webp" />
@@ -173,11 +179,6 @@
     <Content Include="hinh\Pembroke-Welsh-Corgi-standing-outdoors-in-the-fall.webp" />
     <Content Include="hinh\public.avif" />
     <Content Include="hinh\shiba2.webp" />
-    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
-    <Content Include="Scripts\jquery-3.0.0.js" />
-    <Content Include="Scripts\jquery-3.0.0.min.js" />
-    <Content Include="Scripts\jquery-3.0.0.slim.js" />
-    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
@@ -324,6 +325,13 @@
     <Compile Include="SiteLayout.Master.designer.cs">
       <DependentUpon>SiteLayout.Master</DependentUpon>
     </Compile>
+    <Compile Include="ThemSP.aspx.cs">
+      <DependentUpon>ThemSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemSP.aspx.designer.cs">
+      <DependentUpon>ThemSP.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ThuCung.aspx.cs">
       <DependentUpon>ThuCung.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -334,9 +342,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
-    <Content Include="Scripts\jquery-3.0.0.min.map" />
     <Content Include="SiteLayout.Master" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
